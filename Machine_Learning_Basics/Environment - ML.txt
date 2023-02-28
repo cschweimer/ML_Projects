@@ -1,0 +1,12 @@
+conda create --name ML
+conda install -c anaconda jupyter
+conda install -c anaconda ipykernel
+ipython kernel install --user --name=ML
+
+conda install numpy
+conda install -c anaconda pandas
+conda install -c anaconda scikit-learn
+conda install -c conda-forge matplotlib
+conda install -c anaconda quandl
+conda install -c anaconda xlrd
+conda install -c conda-forge tensorflow
