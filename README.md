@@ -1,2 +1,3 @@
 # ML_Projects
-Repo for various ML Projects in Python.
+
+This repo serves as storage for ML projects. Basic ML algorithms (Linear Regression, Logistic Regression) and DL models (CNN, RNN).
