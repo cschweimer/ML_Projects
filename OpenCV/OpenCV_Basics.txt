@@ -1,0 +1,28 @@
+OpenCV:
+
+- source: https://pythonprogramming.net/loading-images-python-opencv-tutorial/
+- installation with conda
+- image processing library
+- Functionalities:
+    * Image loading: often converted to grayscale images for simplification
+    * Webcam Activation: 0 -> first webcam in the system; using a while loop; always cap.rlease(); can display multiple videos at the same time
+    * Draw on images: line, rectangle, circle, polygons; can fill-in too
+    * Write on images: use a font, starting point
+    * Image Operations: modify pixel, ROI: region of image -> rectangle, modify a ROI, e.g., copy and paste
+    * Image Arithmetics: addition (pixelwise addition -> mainly white image); weighted addition (e.g., 0.6 of image 1 and 0.4 of image 2)
+    * Logical Operations: impose one image on another one (transparent background of one image put on another image); thresholding: if pixel value above THRESHOLD, convert it to 255, else convert it to 0; bitwise_not, bitwise_and: and/or
+    * Thresholding: main idea: extreme simplification of an image -> everything is 0 or 1 (black or white); e.g., Gaussian adaptive threshold
+    * Color Filtering: show just one color/filter out one color, using HSV (hue, saturation, value) color; define a range with bitwise_and operation
+    * Blurring and Smoothing: for noise removing; blurring: average the pixels, e.g., Gaussian Blur, median blur, bilateral blur
+    * Morphological Transformations: to remove white noise from filters
+	- Erosion and Dilation: erosion: uses a window to verify that all pixels have the same color, erodes away; dilation: opposite of erosion, pushes out
+	- Opening and Closing: opening: remove false positives (noise in the background); closing: remove false negatives (false classifications in the object of interest)
+	- Tophat and Blackhat: tophat: difference between input image and Opening of the image; blackhat: difference between the closing of the input image and input image; those are not as commonly used
+    * Edge Detection: Laplacian Gradient, Sobel Gradient (x- or y-direction), Canny Edge Detection
+    * Template Matching: look for a template (e.g., a CD) in an image, better to have multiple templates and higher thresholds (higher matching)
+    * Corner Detection: 3D recreation, motion tracking, character recognition
+    * Feature Matching: better than template matching, template can have different lighting, angles, rotation from the image
+    * Background Reduction: with a video, using MOG algorithm: changes from previous frame -> good for finding motion or differences in pictures
+    * Object Detection with Haar Cascades: get xml-file from opencv/data/haarcascades, can detect various objects in images/videos
+
+
