@@ -1,0 +1,42 @@
+Natural Language Processing tutorial series, using NLTK with Python 
+
+Source: https://pythonprogramming.net/tokenizing-words-sentences-nltk-tutorial/ (sentdex)
+
+- Tokenizing: form of grouping things
+	* various tokenizers available (e.g., word, sentence)
+	* word: separate by word
+	* sentence: separate by sentence
+- Lexicon: words and their meanings (like a dictionary) depending on the context
+- Corpora: body of text, e.g., medical journals, presidential speeches, English language
+- Stop Words: 
+	* words that have no meaning for the text, e.g., a, the, and -> filler words
+	* predefined for various languages, but can be modified
+- Stemming: 
+	* finding the root stem of a word, e.g., writing, wrote, written -> write
+	* multiple stemming algorithms available, e.g., PorterStemmer
+- Part of speech tagging:
+	* label every word: noun, verb, adjective, etc. -> POS tag list is available
+	* Tokenize a text -> then apply part of speech tagging
+- Chunking:
+	* body of text -> split up by text/word and POS tags
+	* find out meaning of a text by named entities or nouns (person, place, thing, etc.)
+	* find words that affect each noun
+	* using "regular expressions", especially modifiers
+- Chinking:
+	* "chink from a chunk"
+	* removal of something, filter out parts of the text
+- Named Entity Recognition:
+	* identify and classify named entities into predefined categories, e.g., person, location, organization, etc.
+	* high error rate, and many false positives
+- Lemmatization: 
+	* similar to stemming, but ends with a real word, can be a synonym
+	* only works for one word at a time
+	* can determine the type of word, e.g., noun, verb, adjective -> default is noun
+- Wordnet: 
+	* lexical database for the English language
+	* find meaning of words, synonyms or antonyms
+- Text Classification:
+	* train a classifier that classifies a text into, e.g., positive or negative sentiment
+
+
+
